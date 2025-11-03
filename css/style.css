@@ -1,0 +1,109 @@
+:root {
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222123;
+  color: white;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: #eee;
+}
+
+.stats-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stats {
+  box-shadow: #000 0px 30px 60px -12px inset, #000 0px 18px 36px -18px inset;
+  padding: 32px;
+  width: 768px;
+  height: 352px;
+  background: linear-gradient(to top right, #000000, #212020);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+.stats:hover {
+  width: 770px;
+  height: 354px;
+  /* box-shadow: 0 0 5px black; */
+  box-shadow: #000 0px 15px 20px -3px inset, #000 0px 12px 27px -12px inset;
+}
+
+.leetcode-card,
+.github-card,
+.codeforces-card {
+  width: 400px;
+  transition:
+    width 0.3s ease,
+    border 0.3s ease;
+}
+
+.leetcode-card:hover {
+  width: 408px;
+  border: 3px solid rgba(190, 143, 13, 1);
+  box-shadow: 0 0 20px rgba(190, 143, 13, 1);
+  border-radius: 6px;
+}
+
+.github-card:hover {
+  width: 408px;
+  border: 3px solid rgb(83, 93, 120);
+  box-shadow: 0 0 20px rgb(113, 117, 144);
+  border-radius: 6px;
+}
+
+.codeforces-card {
+  width: 320px;
+}
+
+.codeforces-card:hover {
+  width: 328px;
+  border: 3px solid rgb(195, 27, 27);
+  box-shadow: 0 0 20px rgb(186, 31, 31);
+  border-radius: 6px;
+}
+
+/* Topbar Stuff */
+
+.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.links a {
+  color: #669c70;
+  text-decoration: none;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #121212;
+  box-shadow: #000 0px 6px 8px;
+}
