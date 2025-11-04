@@ -30,6 +30,7 @@ h1 {
 .first2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
 
@@ -43,14 +44,37 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
-  transition: all 0.3s ease;
+  transition:
+    all 0.3s ease,
+    width 0.1s ease,
+    height 0.1s ease;
+
 }
+
 .stats:hover {
   width: 770px;
   height: 354px;
   /* box-shadow: 0 0 5px black; */
+  box-shadow: #000 0px 12px 27px -3px inset, #000 0px 12px 27px -12px inset;
+}
+
+.stats.small {
+  width: 500px;
+  height: 600px;
+}
+
+.stats.small:hover {
+  width: 502px;
+  height: 603px;
+  /* box-shadow: 0 0 5px black; */
   box-shadow: #000 0px 15px 20px -3px inset, #000 0px 12px 27px -12px inset;
+}
+
+.stats.smaller {
+  width: 80%;
+  height: 603px;
 }
 
 .leetcode-card,
@@ -59,7 +83,8 @@ h1 {
   width: 400px;
   transition:
     width 0.3s ease,
-    border 0.3s ease;
+    border 0.3s ease,
+    all 0.3s ease;
 }
 
 .leetcode-card:hover {
@@ -92,7 +117,8 @@ h1 {
 .links {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .links a {
@@ -106,4 +132,7 @@ h1 {
   width: 100%;
   background: #121212;
   box-shadow: #000 0px 6px 8px;
+  display: flex;
+  justify-content: center;
 }
+
