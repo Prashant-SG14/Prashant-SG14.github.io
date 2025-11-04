@@ -7,8 +7,8 @@ function adjustLayout() {
   const width = window.innerWidth;
 
   if (width <= 620) {
-    stats.classList.add('smaller');
     stats.classList.remove('small');
+    stats.classList.add('smaller');
     if (!first2.contains(cfc)) first2.insertBefore(cfc, first2.children[1]);
 
   } else if (width <= 880) {
