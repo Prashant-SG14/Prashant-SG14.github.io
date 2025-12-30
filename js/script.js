@@ -24,4 +24,3 @@ function adjustLayout() {
 
 window.addEventListener('DOMContentLoaded', adjustLayout);
 window.addEventListener('resize', adjustLayout);
-
